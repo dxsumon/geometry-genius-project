@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Calculate</title>
+    <!-- This is the daisy ui abd tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="container mx-auto bg-[#E7F4FB]">
+        <section class="mt-5 p-5 flex justify-between items-center lg:mb-[50px]">
+            <div class="text-[black]">
+                <h1 class="text-2xl font-semibold">Interactive</h1>
+            <p>Geometry design</p>
+            </div>
+            <label class="flex cursor-pointer gap-2 ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+                <input type="checkbox" value="synthwave" class="toggle theme-controller"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+              </label>
+        </section>
+    </header>
+    <main class="container mx-auto">
+        <div class="flex gap-4 flex-col lg:flex-row p-3">
+            <div class="card-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-1 gap-4">
+                <!-- Triangle -->
+                <div class="card w-full bg-base-100 shadow-xl border-2 p-4">
+                    <figure><img src="./images/triangle.png" alt="triangle" /></figure>
+                    <div class="space-y-2 lg:space-y-4 mt-3">
+                      <h2 class="text-center text-2xl font-semibold">Triangle</h2>
+                      <p class="text-center lg:text-3xl">Area (A) = 0.5 X b X h </p>
+                      <div class="input-field flex flex-row justify-center items-center gap-3">
+                        <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4" type="text" name="" id="input-base" placeholder="B">
+                      <span>cm</span>
+                      <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4" type="text" name="" id="input-height" placeholder="H">
+                      <span>cm</span>
+                      </div>
+                      <div class="area-calculation">
+                        <p class="lg:text-3xl text-center">Area: <span id="area-calculation" class="font-bold"></span><span>cm</span><sub>2</sub></p>
+                      </div>
+                      <div class="card-actions">
+                        <button id="calculate-btn" class="btn bg-[#1090D8] text-[white] w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- rectangle -->
+                <div class="card w-full bg-base-100 shadow-xl border-2 p-4">
+                    <figure><img  src="./images/rectangle.png" alt="rectangle" /></figure>
+                    <div class="space-y-2 lg:space-y-4 mt-3">
+                      <h2 class="text-center text-2xl font-semibold">Rectangle</h2>
+                      <p class="text-center lg:text-3xl">Area (A) = W  X  L</p>
+                      <div class="input-field flex flex-row justify-center items-center gap-3">
+                        <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4" type="text" name="" id="input-width" placeholder="W">
+                      <span>cm</span>
+                      <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4" type="text" name="" id="input-length" placeholder="H">
+                      <span>cm</span>
+                      </div>
+                      <div class="rectangle-area">
+                        <p class="lg:text-3xl text-center">Area: <span id="rec-area" class="font-bold"></span><span>cm</span><sub>2</sub></p>
+                      </div>
+                      <div class="card-actions">
+                        <button id="rectangle-calculate-btn" class="btn bg-[#1090D8] text-[white] w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Parallelogram -->
+                <div class="card w-full bg-base-100 shadow-xl border-2 p-4">
+                    <figure><img  src="./images/parallelogram.png" alt="Parallelogram" /></figure>
+                    <div class="space-y-2 lg:space-y-4 mt-3">
+                      <h2 class="text-center text-2xl font-semibold">Parallelogram</h2>
+                      <p class="text-center lg:text-3xl">Area (A) = b X h </p>
+                      <div class="input-field flex flex-row justify-center items-center gap-3">
+                        <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4" type="text" name="" id="input-b" placeholder="b">
+                      <span>cm</span>
+                      <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4" type="text" name="" id="input-h" placeholder="h">
+                      <span>cm</span>
+                      </div>
+                      <div>
+                        <p class="lg:text-3xl text-center">Area: <span class="font-semibold" id="parallelogram-area"></span><span>cm</span><sub>2</sub></p>
+                      </div>
+                      <div class="card-actions">
+                        <button id="parallelogram-calculate-btn" class="btn bg-[#1090D8] text-[white] w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="calculate-section border-2 w-full lg:w-[20%] rounded-lg p-5">
+                <h1 class="text-center">Area Calculation</h1>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
