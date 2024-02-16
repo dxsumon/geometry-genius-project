@@ -33,9 +33,9 @@
                       <h2 class="text-center text-2xl font-semibold">Triangle</h2>
                       <p class="text-center lg:text-2xl">Area (A) = 0.5 X b X h </p>
                       <div class="input-field flex flex-row justify-center items-center gap-3">
-                        <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4" type="text" name="" id="input-base" placeholder="B">
+                        <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4 placeholder-black" type="text" name="" id="input-base" placeholder="B">
                       <span>cm</span>
-                      <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4" type="text" name="" id="input-height" placeholder="H">
+                      <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4 placeholder-black" type="text" name="" id="input-height" placeholder="H">
                       <span>cm</span>
                       </div>
                       <div class="area-calculation">
@@ -53,9 +53,9 @@
                       <h2 class="text-center text-2xl font-semibold">Rectangle</h2>
                       <p class="text-center lg:text-2xl">Area (A) = W  X  L</p>
                       <div class="input-field flex flex-row justify-center items-center gap-3">
-                        <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4" type="text" name="" id="input-width" placeholder="W">
+                        <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4 placeholder-black" type="text" name="" id="input-width" placeholder="W">
                       <span>cm</span>
-                      <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4" type="text" name="" id="input-length" placeholder="H">
+                      <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4 placeholder-black" type="text" name="" id="input-length" placeholder="H">
                       <span>cm</span>
                       </div>
                       <div class="rectangle-area">
@@ -73,9 +73,9 @@
                       <h2 class="text-center text-2xl font-semibold">Parallelogram</h2>
                       <p class="text-center lg:text-2xl">Area (A) = b X h </p>
                       <div class="input-field flex flex-row justify-center items-center gap-3">
-                        <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4" type="text" name="" id="input-b" placeholder="b">
+                        <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4 placeholder-black" type="text" name="" id="input-b" placeholder="b">
                       <span>cm</span>
-                      <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4" type="text" name="" id="input-h" placeholder="h">
+                      <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4 placeholder-black" type="text" name="" id="input-h" placeholder="h">
                       <span>cm</span>
                       </div>
                       <div>
@@ -86,6 +86,68 @@
                       </div>
                     </div>
                   </div>
+
+                  <!-- Rhombus -->
+                <div class="flex-1 card w-[100%] bg-base-100 shadow-xl border-2 p-4">
+                    <figure><img src="./images/rhombus.png" alt="triangle" /></figure>
+                    <div class="space-y-2 lg:space-y-4 mt-3">
+                      <h2 class="text-center text-2xl font-semibold">Triangle</h2>
+                      <p class="text-center lg:text-2xl">Area (A) = 0.5 X d1 X d2 </p>
+                      <div class="input-field flex flex-row justify-center items-center gap-3">
+                        <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4 placeholder-black" type="text" name="" id="input-diagonal1" placeholder="B">
+                      <span>cm</span>
+                      <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4 placeholder-black" type="text" name="" id="input-diagonal2" placeholder="H">
+                      <span>cm</span>
+                      </div>
+                      <div class="area-calculation">
+                        <p class="lg:text-2xl text-center">Area: <span id="rhombus-area-calculation" class="font-bold"> 0 </span><span>cm</span><sup>2</sup></p>
+                      </div>
+                      <div class="card-actions">
+                        <button id="rhombus-calculate-btn" class="btn bg-[#1090D8] text-[white] w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Pentagon -->
+                <div class="flex-1 card w-[100%] bg-base-100 shadow-xl border-2 p-4">
+                    <figure><img src="./images/pentagon.png" alt="triangle" /></figure>
+                    <div class="space-y-2 lg:space-y-4 mt-3">
+                      <h2 class="text-center text-2xl font-semibold">Pentagon</h2>
+                      <p class="text-center lg:text-2xl">Area (A) = 0.5 X p X b </p>
+                      <div class="input-field flex flex-row justify-center items-center gap-3">
+                        <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4 placeholder-black" type="text" name="" id="input-p" placeholder="P">
+                      <span>cm</span>
+                      <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4 placeholder-black" type="text" name="" id="second-input" placeholder="B">
+                      <span>cm</span>
+                      </div>
+                      <div class="area-calculation">
+                        <p class="lg:text-2xl text-center">Area: <span id="pentagon-area-calculation" class="font-bold"> 0 </span><span>cm</span><sup>2</sup></p>
+                      </div>
+                      <div class="card-actions">
+                        <button id="pentagon-calculate-btn" class="btn bg-[#1090D8] text-[white] w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Ellipse -->
+                <div class="flex-1 card w-[100%] bg-base-100 shadow-xl border-2 p-4">
+                    <figure><img src="./images/ellipse.png" alt="triangle" /></figure>
+                    <div class="space-y-2 lg:space-y-4 mt-3">
+                      <h2 class="text-center text-2xl font-semibold">Ellipse</h2>
+                      <p class="text-center lg:text-2xl">Area (A) = πab </p>
+                      <div class="input-field flex flex-row justify-center items-center gap-3">
+                        <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4 placeholder-black" type="text" name="" id="ellipse-first-input" placeholder="X">
+                      <span>cm</span>
+                      <input class="bg-[#f1f1f1] w-full lg:w-24 px-3 py-2 lg:px-3 lg:py-4 placeholder-black" type="text" name="" id="ellipse-second-input" placeholder="Y">
+                      <span>cm</span>
+                      </div>
+                      <div class="area-calculation">
+                        <p class="lg:text-2xl text-center">Area: <span id="ellipse-area-calculation" class="font-bold"> 0 </span><span>cm</span><sup>2</sup></p>
+                      </div>
+                      <div class="card-actions">
+                        <button onclick="ellipseCalculate()" class="btn bg-[#1090D8] text-[white] w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
             </div>
 
             <div class="calculate-section border-2 rounded-lg p-5">
